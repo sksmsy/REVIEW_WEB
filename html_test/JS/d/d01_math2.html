@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수학객체2</title>
+    <script>
+        document.write("<h1>가위바위보 맞추기</h1>");
+
+        var game = prompt("가위 바위 보 중 선택하세요","");
+        var gameNum;
+
+        switch(game){
+            case "가위": gameNum = 1;
+            break;
+            case"바위" : gameNum = 2;
+            break;
+            case"보" : gameNum = 3;
+            break;
+            default: alert("잘못 입력하였습니다.");
+            location.reload();
+        }
+
+        var com = Math.floor(Math.random() * 3)+1;
+
+        document.write("COM : " + com +"<br>");
+
+        if(gameNum ==com){
+            document.write("정답");
+        }else{
+            document.write("땡");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

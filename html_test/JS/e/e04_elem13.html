@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function checkID(){
+            var s = document.getElementById("id").value;
+            if(s.length < 6){
+                alert("ID는 6자 이상")
+            }
+        }
+    </script>
+</head>
+<body>
+    아이디 : <input type="text" id="id" size="10">
+    <button onclick="checkID()">check</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+    <script>
+        function jsonTest(){
+            var students = [
+                {'name':'Kim','age':21},
+                {'name':'Jang','age':22},
+                {'name':'Lee','age':23},
+            ]
+        }
+
+    document.getElementById("name").innerHTML = students[1].name;
+    document.getElementById("age").innerHTML = students[1].age;
+    </script>
+</head>
+<body>
+    <h4>Student List</h4>
+    <p>
+        name : <div id="name"></div>&nbsp
+        age : <div id="age"></div>
+        <script>
+            jsonTest();
+        </script>
+    </p>
+    
+</body>
+</html>

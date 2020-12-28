@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var rightId = "korea";
+        var rightPw = "1234";
+        function login(id,pw){
+            if(id == rightId){
+                if(pw == rightPw){
+                    document.write(id + "님 환영합니다.");
+                }else{
+                    alert("PW를 확인해주세요");
+                }
+            }else{
+                alert("ID를 확인해주세요");
+            }
+        }
+
+
+        var userId = prompt("ID ","");
+        var userPw = prompt("PW", "");
+
+        login(userId,userPw);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

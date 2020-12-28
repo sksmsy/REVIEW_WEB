@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var id;
+        function changeColor(){
+            id = setInterval(flashText, 500);
+        }
+
+        function flashText(){
+            var elem = document.getElementById("target");
+            elem.style.color = (elem.style.color == "aqua")? "blue" : "aqua";
+            elem.style.backgroundColor =
+                (elem.style.backgroundColor == "lightblue") ? "lightgreen" : "lightblue";
+        }
+
+        function stopTextColor(){
+            clearInterval(id);
+        }
+    </script>
+</head>
+<body onload = "changeColor();">
+    <div id="target">
+        <p>text.</p>
+
+    </div>
+    <button onclick="stopTextColor();">stop</button>
+</body>
+</html>

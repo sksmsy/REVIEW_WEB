@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>날짜 정보 객체</title>
+    <script>
+        var today = new Date();
+        var nowMonth = today.getMonth() + 1;
+        var nowDate = today.getDate();
+
+        // 일(0) ~ 토(6)
+        var nowDay = today.getDay();
+
+        document.write("<h1>오늘의 날짜</h1>");
+        document.write("현재 월 : " + nowMonth,"<br>");
+        document.write("현재 일 : " + nowDate,"<br>");
+        document.write("현재 요일 : " + nowDay,"<br>");
+
+        var wc = new Date(2002,4,31);
+        var theMonth = wc.getMonth();
+                        theDate = wc.getDate();
+                        theDay = wc.getDay();
+
+
+        document.write("<h1>2002 WC</h1>");
+        document.write("2002 wc month : " + theMonth,"<br>" );
+        document.write("2002 wc date : " + theDate,"<br>");
+        document.write("2002 wc day : " + theDay,"<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

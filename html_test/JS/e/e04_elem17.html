@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function checkSelection(elem, msg){
+            if(elem.value == 0 ){
+                alert(msg);
+                elem.focus();
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        선택 <select id="fruits" class="required">
+            <option value="0">선택</option>
+            <option value="1">apple</option>
+            <option value="2">banana</option>
+            <option value="3">grape</option>
+        </select>
+        <input type='button'
+            onclick="checkSelection(document.getElementById('fruit'), '하나를 선택해야합니다.')"
+                value='확인' />
+    </form>
+</body>
+</html>

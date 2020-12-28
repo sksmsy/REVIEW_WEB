@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    function addtext(t){
+        if(document.createTextNode){
+            var node = document.createTextNode(t);
+            document.getElementById("target").appendChild(node);
+        }
+    }
+</script>
+<body>
+    <div id="target" onclick="addtext('동적으로 텍스트가 추가됩니다.')"
+        style="font: 20px bold;">클릭</div>
+    
+</body>
+</html>
